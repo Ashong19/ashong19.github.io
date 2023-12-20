@@ -2,6 +2,7 @@
     /* border: 1px solid red; */
     box-sizing: border-box;
     margin: 0;
+    /* color: #fff !important; */
 }
 
 .hero{
@@ -23,7 +24,9 @@
     height: 700px;
     opacity: 0.5;
 }
-
+nav li a{
+    color: #fff !important;
+}
 /* Nagication Style CSS */
 nav li a:hover{
     background-color:  rgb(233, 220, 220,0.3);
@@ -121,5 +124,5 @@ footer a{
 }
 footer{
     background-color: rgb(33, 33, 105);
-    color: #fff;
+    color: #fff !important;
 }
