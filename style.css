@@ -116,6 +116,10 @@ article img{
 /* Footer */
 
 footer a{
-    /* color: rgb(232, 232, 240) !important; */
+    color: rgb(232, 232, 240) !important;
     margin: 20px;
+}
+footer{
+    background-color: rgb(33, 33, 105);
+    color: #fff;
 }
