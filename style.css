@@ -6,12 +6,12 @@
 }
 
 .hero{
-    height: 900px;
+    height: 800px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-image: url("media/hero1.jpg");
+    background-image: url("media/hero4.jpg");
     color: #fff !important;
 }
 
@@ -19,21 +19,32 @@
     width: 40px;
 }
 
-.hero-card{
-    background-color: black;
-    height: 700px;
-    opacity: 0.5;
+.nav.navbar-nav {
+    background-color: red;
+  }
+.search-img{
+    width: 20px;
 }
+
+.hero-card{
+    background-color: rgba(219, 219, 230, 0.2);
+    height: 500px;
+    width: 80%;
+    border-radius: 10px;
+}
+
 nav li a{
     color: #fff !important;
 }
 /* Nagication Style CSS */
 nav li a:hover{
-    background-color:  rgb(233, 220, 220,0.3);
+    background-color:  rgba(15, 9, 100, 0.8);
+    border-radius: 2px;
+    width: 100%;
 }
 
 .dropdown-item:hover{
-    background-color:  rgb(233, 220, 220,0.3);
+    background-color:  rgba(15, 9, 100, 0.8);
 }
 
 .navbar-toggler{
@@ -119,10 +130,34 @@ article img{
 /* Footer */
 
 footer a{
-    color: rgb(232, 232, 240) !important;
-    margin: 20px;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+}
+footer a:hover{
+    color: rgb(236, 227, 227,0.6);
 }
 footer{
-    background-color: rgb(33, 33, 105);
-    color: #fff !important;
+    background-color: rgb(30, 30, 56);
+    color: #fff;
 }
+footer img{
+    width: 20px;
+}
+
+/* Search bar */
+.input_with_icon {
+    position: relative;
+}
+.input_with_icon .form-control {
+    padding-left: 40px;
+    height: 21px;
+}
+.input_with_icon img {
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    left: 10px;
+    margin: auto;
+}
+
