@@ -3,12 +3,21 @@
 }
 
 .hero{
-    height: 900px;
+    height: 100vh;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-image: url("media/hero4.jpg");
+    background-image: url("media/heronew.jpg");
+
+}
+
+.hero-text{
+  font-size: 50px;
+  background: linear-gradient(to right, rgba(4, 40, 54, 0.8), rgba(90, 4, 79, 0.8));
+  border-radius: 20px;
+  padding: 20px 100px;
 }
 
 /* Images Style and Sizes */
@@ -32,6 +41,9 @@
 
 .topic-img{
   width: 100%;
+}
+.partner-logo{
+  width: 100px;
 }
 
 .hero-card{
