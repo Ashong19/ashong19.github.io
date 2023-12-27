@@ -2,9 +2,13 @@
     /* border: 1px solid black; */
 }
 
+body{
+  font-size: 20px;
+}
+
 .hero{
-    height: 100vh;
     width: 100%;
+    height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,14 +17,30 @@
 
 }
 
+.testi-hero{
+  width: 100%;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("media/hero3.jpg");
+
+}
+
+/* --------------- Text Styles --------------- */
+
+.text-justify{
+  text-align: justify;
+}
+
 .hero-text{
   font-size: 50px;
-  background: linear-gradient(to right, rgba(4, 40, 54, 0.8), rgba(90, 4, 79, 0.8));
   border-radius: 20px;
   padding: 20px 100px;
 }
 
-/* Images Style and Sizes */
+/* --------------- Images Style and Sizes --------------- */
 
 .logo{
     width: 40px;
@@ -46,17 +66,39 @@
   width: 100px;
 }
 
+.banner-img{
+  width: 100%; 
+  height: 200px;
+}
+
+.testi-img{
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient(to right, darkblue, darkorchid) border-box;
+  border-radius: 50em;
+  border: 10px solid transparent;
+  width: 200px;
+}
+
 .hero-card{
-    background-color: rgb(0, 116, 183,0.5);
+    background: linear-gradient(to right, rgb(1, 1, 136,0.8), rgb(152, 51, 202,0.8));
     height: auto;
-    width: 80%;
     border-radius: 10px;
-    position: relative;
+    margin: auto;
+    width: 70%;
+}
+.testi-card{
+  background: linear-gradient(to right, rgb(1, 1, 136,0.8), rgb(152, 51, 202,0.8));
+  height: auto;
+  border-radius: 10px;
+  margin: auto;
+  width: 70%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 hr{
-  width: 80%;
+  width: 50%;
   margin: auto;
-  border: 1px solid black;
+  border: 2px solid black;
   text-align: center;
 }
 
@@ -65,7 +107,7 @@ nav li a{
 }
 
 
-/* Navigation Style CSS */
+/* --------------- Navigation Style CSS --------------- */
 
 .nav-bg{
   background-color: #003B73 !important ;
@@ -98,7 +140,7 @@ nav li a:hover{
   display: inline-block;
 }
 
-/* Nagication Style toggle CSS */
+/* --------------- Nagication Style toggle CSS --------------- */
 
 .navbar-toggler{
     width: 40px;
@@ -171,7 +213,7 @@ nav li a:hover{
 }
 
 
-/* Article Section CSS */
+/* --------------- Article Section CSS --------------- */
 
 article img{
     width: 300px;
@@ -181,7 +223,7 @@ article a{
   color: #003B73;
 }
 
-/* Accordion Background color | Hover */
+/* --------------- Accordion Background color | Hover --------------- */
 
 .acd-btn{
   background-color: #003B73 !important;
@@ -190,7 +232,7 @@ article a{
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
-/* Button */
+/* --------------- Button --------------- */
 
 .btn-darkinfo {
   color: #fff !important;
@@ -224,7 +266,19 @@ article a{
 
 /* Animation effect */
   
-/* Slides Left to Right */
+/* --------------- Image Hover Effect --------------- */
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card{
+  transition: transform .5s;
+  border: none;
+
+}
+
+/* --------------- Slides Left to Right --------------- */
 .slide-right {
     animation: 3s slide-right;
     margin-left: 5%;
@@ -238,7 +292,7 @@ article a{
     }
   }
   
-/* Slides Right to Left */
+/* --------------- Slides Right to Left --------------- */
 .slide-left {
     animation: 3s slide-left;
     margin-right: 10%;
@@ -253,17 +307,9 @@ article a{
     }
   }
   
-/* Image Hover Effect */
 
-.card:hover{
-  transform: scale(1.1);
-}
 
-.card{
-  transition: transform .5s;
-}
-
-/* Container Shadow */
+/* --------------- Container Shadow --------------- */
 .container {
     padding: 20px;
     box-shadow: 1px 15px 20px -5px #003B73;
@@ -272,7 +318,7 @@ article a{
 }
 
 
-/* Footer */
+/* --------------- Footer --------------- */
 footer a{
     text-decoration: none;
     color: #fff;
@@ -280,7 +326,7 @@ footer a{
 
 }
 footer a:hover{
-    color: rgb(236, 227, 227,0.6);
+    color: rgb(236, 227, 227,0.8);
 }
 footer{
     background-color:#003B73;
