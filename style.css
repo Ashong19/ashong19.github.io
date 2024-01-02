@@ -81,7 +81,6 @@ body{
 }
 .developer-img{
   width: 250px;
-  text-align: center;
 }
 .banner-img{
   width: 100%; 
@@ -321,6 +320,7 @@ article li{
 .slide-right {
     animation: 3s slide-right;
     margin-left: 2%;
+    text-align: center;
 }
   @keyframes slide-right {
     0% {
