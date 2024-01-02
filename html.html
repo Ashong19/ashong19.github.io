@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Info</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+    <header>
+        <!-- Navigation Section -->
+        <nav class="navbar navbar-expand-lg p-5 nav-bg ">
+            <div class="container-fluid">
+                <!-- Company Name and Logo -->
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="media/logo.png" alt="Company Logo" title="Company Logo"> <span class="text-white">CODE INFO</span>
+                </a>
+                <button class="navbar-toggler text-white collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#NavbarHeader" aria-controls="NavbarHeader" aria-expanded="false" aria-label="Toggle Navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse justify-content-center" id="NavbarHeader">
+                    <ul class="navbar-nav navbar-expand-sm mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" id="NavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="">Resources</a>
+                            <ul class="dropdown-menu text-center  border border-0" aria-labelledby="NavbarDropdown">
+                                <li><a class="dropdown-item" href="coding.html">Coding</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" id="NavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="">Blog</a>
+                            <ul class="dropdown-menu text-center border border-0 bg-none" aria-labelledby="NavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Article 1</a></li>
+                                <li><a class="dropdown-item" href="#">Article 2</a></li>
+                                <li><a class="dropdown-item" href="#">Article 3</a></li>
+                                <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item ms-4 ">
+                           <img class="search-img pt-2" src="media/search-icon.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> <!--End of Navigation-->
+    </header><!--End of Header-->
+
+    <article class="container mb-5 mt-5 "> <!-- Main Container Article -->
+        <div class="row"> <!-- Start of Row Content-->
+            <div  class="col-md-4 accordion accordion-flush" id="AccordionSample"> <!-- Main accordion -->
+                <div class="accordion-item" id="accordion">
+                    <h2 class="accordion-header " id="heading1"> <!--Accordion item 1-->
+                        <button class="accordion-button acd-btn text-white" type="button" data-bs-toggle="collapse" data-bs-target="#Collapse1" aria-expanded="true" aria-controls="Collapse1">HTML</button>
+                    </h2>
+                    <div id="Collapse1" class="accordion-collapse collapse show" data-bs-parent="AccordionSample" aria-labelledby="heading1">
+                        <div class="accordion-body">
+                            <p>HTML is the foundation on which all websites and coding projects are built. Our easy-to-follow beginner’s guide will walk you through topics from structured content to visual formatting and best practices involving HTML.</p>
+                            <a class="btn btn-outline-darkinfo mb-4" href="coding.html">Learn more</a>
+                        </div>
+                    </div>
+                    
+                    <h2 class="accordion-header" id="heading2"> <!--Accordion item 2-->
+                        <button class="accordion-button acd-btn text-white" type="button" data-bs-toggle="collapse" data-bs-target="#Collapse2" aria-expanded="false" aria-controls="Collapse2">CSS</button>
+                    </h2>
+                    <div id="Collapse2" class="accordion-collapse collapse" data-bs-parent="AccordionSample" aria-labelledby="heading2">
+                        <div class="accordion-body">
+                            <p>CSS stands for Cascading Style Sheets. CSS gives website developers the ability to modify a page layout, adjust colors and fonts and add effects to images and other elements.</p>
+                            <a class="btn btn-outline-darkinfo mb-4" href="css.html">Learn more</a>
+                        </div>
+                    </div>
+    
+                    <h2 class="accordion-header" id="heading3"> <!--Accordion item 3-->
+                        <button class="accordion-button acd-btn text-white" type="button" data-bs-toggle="collapse" data-bs-target="#Collapse3" aria-expanded="false" aria-controls="Collapse3">Javascript</button>
+                    </h2>
+                    <div id="Collapse3" class="accordion-collapse collapse" data-bs-parent="AccordionSample" aria-labelledby="heading3">
+                        <div class="accordion-body">
+                            <p>JavaScript is a dynamic, interpreted computer programming language with object-oriented capabilities. It is lightweight and most commonly used as a part of webpages whose implementations allow client-side script to interact with the user and create dynamic pages</p>
+                            <a class="btn btn-outline-darkinfo mb-4" href="#">Learn more</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> <!-- End of Accordion Section -->
+
+            <div class="col-md-8"> <!--Start of Column 8-->
+                <div id="HTMLIntro" class="ps-3">
+                    <h1 class="mb-3">What You Need to Know Before Starting to Code</h1>
+                    <img class="topic-img" src="media/figure2.jpg" alt="">
+                    <h4 class="mt-4 mb-3">What is HTML?</h5>
+                        <p>HTML, which stands for “Hypertext Markup Language,” is the language used to create, structure and design websites. The term “hypertext” refers to HTML’s ability to link out to relevant content. As a markup language, tags are used in HTML to define the overall structure and layout of a webpage, as well as the content elements within it. </p>
+                        <p>At its most fundamental level — before extra styling and dynamic elements are applied — HTML tags tell your web browser what to display on the screen and in what order. When coding for the web, you wrap or enclose different parts of your content to ensure that it appears where, when and how you want. Basic HTML tags can determine font size as well as basic formatting choices such as bold or italics. </p>
+                        <p>While the kind of content, design and dynamism that we see on the web has changed dramatically over the past few decades, HTML has remained the fundamental framework that powers web design. Even dynamic websites generated by more advanced scripting languages such as Javascript or PHP rely at least in part on HTML. This is why learning to code in HTML continues to be essential for web developers.</p>
+                </div>
+                    <!-- History Content -->
+                <div class="p-3">
+                    <h4 class="mt-4 mb-3">History Of HTML</h5>
+                        <figure>
+                            <img class="topic-img" src="media/firstwebsite.PNG" alt="">
+                            <figcaption> <i>Figure 1 "First Website"</i> </figcaption>
+                        </figure>
+                        <p>In 1945, The first proposal for a hypertext system was mad trhough the stadies of Vannevar Bush, An American Engineer publish in the article titled "As We May Think"</p>
+                        <p>In 1965, the concept of hypertxt was introduced by Ted Nelson, an American sociologist.</p>
+                        <p>The idea of World Wide Web was born in 1989 through the document "Information Management: a Proposal," drafted by Tim Berners Lee. The project aimed to develope software for sharing scientific documentation in the electronic format, independent of platform.</p>
+                        <p>On August 6, 1991, the <a href="https://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">first website</a> was introduced to the world.</p>
+                        <p>The first website contained information about the World Wide Web Project. It launched at the European Organization for Nuclear Research, CERN, where it was created by British computer scientist Tim Berners-Lee. On it, people could find out how to create web pages and learn about hypertext (coded words or phrases that link to content).</p>
+                        <p>It took 17 days for the page to receive its first visit, and the first external user to access it from outside the research center did so on August 23.</p>
+                        <p>Berners-Lee created the web for the same reason a lot of us visit websites today: to make life just a little bit easier. For him, the problem to be solved rested in computers themselves: there was no way to share information between different devices.</p>
+                </div>
+                    <!-- Basic HTML Content -->
+                <div class="p-3">
+                    <h4 id="HTMLBasics" class="mt-4 mb-3">HTML Basic</h5>
+                        <p>Not sure what you need to know about HTML before you learn? We’ve got you covered. In this section, we’ll discuss the fundamentals of how and why HTML works. </p>
+                        <p>The following are some facts about HTML tags. Every HTML tag begins with an open angle bracket.</p>
+                        <div class="BasicsUL">
+                          <ul class="style-bullet">
+                              <li><p>Web pages are just plain text. You can view or edit the source code using any <a href="">text editor.</a></p</li>
+                              <li><p>"Tags" provide web browsers with instructions about the web page, such as where to display images, and how the document is structured.</p</li>
+                              <li><p>Tags are always enclosed in <b>angle brackets: &lt; &gt;</b></p</li>
+                              <li><p>Tags are comprised of <b>elements</b> and <b>attributes</b>. An element is an object on a page (such as a heading, paragraph, or image), and attributes are qualities that describe that element (such as width and height).</p></li>
+                              <li><p>Tags usually travel in pairs. An opening tag begins a section of page content, and a closing tag ends it. For example, to markup a section of text as a paragraph, you would open the paragraph with an opening paragraph tag <b> &lt;p&gt; this is paragraph tag &lt;/p&gt;</b> and close it with a closing paragraph tag (closing tags always proceed the element with a /).</p></li>
+                              <li><p>A few tags are called non-container tags, because they don't contain any content - they stand alone. Examples are images and line breaks. XHTML is more strict than HTML, and requires that all open tags must be closed, even if they're not container tags. Therefore, non-container tags end in />. For example, the tag for a line break is <b>&lt;b/&gt;</b>. HTML does not have this same requirement, but it's a good habit to get into in case you ever need to code in XHTML.</p></li>
+                              <li><p>Tags in HTML are not case sensitive, but in XHTML all tags must be in lower case. Even when coding in HTML, you should get in the habit of writing tags in lower case.</p></li>
+                              <li><p>White space is ignored by web browsers. So, if you hit the space bar multiple times within a document, only one of those spaces will actually be displayed by the browser.</p></li>
+                          </ul>
+                        </div>
+                        <!-- Table 1 Content -->
+                        <h5 id="Tags" class="mt-5">Understanding the following tables:</h5>
+                        <table class="table border border-1 table-bordered">
+                            <thead>
+                              <tr>
+                                <th scope="col">Opening Tag</th>
+                                <th scope="col">Closing Tag</th>
+                                <th scope="col">Description</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>&lt;html&gt;</td>
+                                <td>&lt;/html&gt;</td>
+                                <td>Opens and closes an HTML document.</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;head&gt;</td>
+                                <td>&lt;/head&gt;</td>
+                                <td>The first of two main sections of an HTML document. The &lt;head&gt; section is used to provide information about the document for use primarily by search engines and browsers.</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;title&gt;</td>
+                                <td>&lt;/title&gt;</td>
+                                <td>The title of document. This element is nested inside the &lt;head&gt; section. <b>In HTML5, this is the only required tag other than the DOCTYPE declaration.</b></td>
+                              </tr>
+                              <tr>
+                                <td>&lt;body&gt;</td>
+                                <td>&lt;/body&gt;</td>
+                                <td>The second of two main sections of an HTML document. The &lt;body&gt; section contains all the content of the web page.</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                           <!-- Table 2 Content -->
+                        <h5 class="mt-5">Content (Containers) Tags</h5>
+                        <table class="table border border-1 table-bordered">
+                            <thead>
+                              <tr>
+                                <th scope="col">Opening Tag</th>
+                                <th scope="col">Closing Tag</th>
+                                <th scope="col">Description</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>&lt;h1&gt; to &lt;h6&gt;</td>
+                                <td>&lt;/h1&gt; to &lt;/h6&gt;</td>
+                                <td>Headings. H1 is the main heading, H2 is secondary, etc.</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;p&gt;</td>
+                                <td>&lt;/p&gt;</td>
+                                <td>Paragraph</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;div&gt;</td>
+                                <td>&lt;/div&gt;</td>
+                                <td>A container for a block of content</b></td>
+                              </tr>
+                              <tr>
+                                <td>&lt;body&gt;</td>
+                                <td>&lt;/body&gt;</td>
+                                <td>The second of two main sections of an HTML document. The &lt;body&gt; section contains all the content of the web page.</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;div&gt;</td>
+                                <td>&lt;/div&gt;</td>
+                                <td>A container for a block of content.</b></td>
+                              </tr>
+                              <tr>
+                                <td>&lt;span&gt;</td>
+                                <td>&lt;/span&gt;</td>
+                                <td>A container for in-line content, such as content inside a paragraph.</b></td>
+                              </tr>
+                              <tr>
+                                <td>&lt;em&gt;</td>
+                                <td>&lt;/em&gt;</td>
+                                <td>Gives the contained text emphasis (usually as <i>italics</i>).</b></td>
+                              </tr>
+                              <tr>
+                                <td>&lt;strong&gt;</td>
+                                <td>&lt;/strong&gt;</td>
+                                <td>Makes the contained text <b>bold.</b>.</b></td>
+                              </tr>
+                              <tr>
+                                <td>&lt;a&gt;</td>
+                                <td>&lt;/a&gt;</td>
+                                <td>anchor it creates link &lt;a href="document location"&gt;</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;ol&gt;</td>
+                                <td>&lt;/lol&gt;</td>
+                                <td>Ordered (numbered) list</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;ul&gt;</td>
+                                <td>&lt;/ul&gt;</td>
+                                <td>Unordered (bulleted) list</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;li&gt;</td>
+                                <td>&lt;/ul&gt;</td>
+                                <td>List item, must be nested inside a list element such as a &lt;ol&gt; or &lt;ul&gt;</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;!--</td>
+                                <td>--&gt;</td>
+                                <td>Comment. Anything between these tags is not displayed on the screen. This is useful for making notes to yourself or to others who may view the source code of the web page.</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                           <!-- Table 3 Content -->
+                        <h5 id="SemanticTags" class="mt-5">HTML5 Semantic Tags</h5>
+                        <table class="table border border-1 table-bordered">
+                            <thead>
+                              <tr>
+                                <th scope="col">Opening Tag</th>
+                                <th scope="col">Closing Tag</th>
+                                <th scope="col">Description</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>&lt;header&gt;</td>
+                                <td>&lt;/header&gt;</td>
+                                <td>Contains introductory content for a page (e.g., a banner), or a section of a page.</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;nav&gt;</td>
+                                <td>&lt;/nav&gt;</td>
+                                <td>Contains navigation content, such as a website navigation menu.</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;main&gt;</td>
+                                <td>&lt;/main&gt;</td>
+                                <td>Contains the main content of the web page</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;aside&gt;</td>
+                                <td>&lt;/aside&gt;</td>
+                                <td>Contains content that is <b>tangentially</b> related to the main content of the page (often this is presented in a sidebar).</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;footer&gt;</td>
+                                <td>&lt;/footer&gt;</td>
+                                <td>Contains the footer of a page, or of a section of a page. Typically the footer contains information about the content, such as the author and a copyright statement.</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                           <!-- Table 4 Content -->
+                        <h5 class="mt-5"><b>Empty (Non-Container) Tags</b></h5>
+                        <table class="table border border-1 table-bordered">
+                            <thead>
+                              <tr>
+                                <th scope="col">Tag</th>
+                                <th scope="col">Description</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>&lt;br&gt;</td>
+                                <td>Line break.</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;img/&gt;</td>
+                                <td>Inserts an image into a web page.</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                            <!-- Table 5 Content -->
+                        <h5 id="Tables" class="mt-5"><b>HTML Tables</b></h5>
+                        <table class="table border border-1 table-bordered">
+                            <thead>
+                              <tr>
+                                <th scope="col">Opening Tag</th>
+                                <th scope="col">Closing Tag</th>
+                                <th scope="col">Sample Attributes</th>
+                                <th scope="col">Description</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>&lt;table&gt;</td>
+                                <td>&lt;/table&gt;</td>
+                                <td></td>
+                                <td>Adds a table</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;tr&gt;</td>
+                                <td>&lt;/tr&gt;</td>
+                                <td></td>
+                                <td>Table row (start & end).</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;th&gt;</td>
+                                <td>&lt;/th&gt;</td>
+                                <td>scope="row"
+                                    scope="col"</td>
+                                <td>When creating a table to display data, use this tag to differentiate the first row or column of cells as heading cells for all the other cells in the same column or row. Browsers typically display this element bold and centered within the table cell. The scope attribute defines whether this is a row header or column header.</td>
+                              </tr>
+                              <tr>
+                                <td>&lt;td&gt;</td>
+                                <td>&lt;/td&gt;</td>
+                                <td></td>
+                                <td>Table data cell.</td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td>colspan="number"</td>
+                                <td>Use with &lt;th&gt; or &lt;td&gt; elements. Spans cells across multiple columns.</td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td>rowspan="number"</td>
+                                <td>Use with &lt;th&gt; or &lt;td&gt; elements. Spans cells across multiple rows.</td>
+                              </tr>
+                            </tbody>
+                        </table> <!-- End of Table content-->
+                </div> 
+
+                <div class="p-3">
+                  <h4 class="mb-3"><b>HTML Forms</b></h4>
+                  <p>An HTML form is a section of a document which contains controls such as text fields, password fields, checkboxes, radio buttons, submit button, menus etc.</p>
+                  <p class="mb-5">An HTML form facilitates the user to enter data that is to be sent to the server for processing such as name, email address, password, phone number, etc. .</p>
+                
+                  <h5 class="mb-3">Why use HTML Form</h5>
+                  <p>HTML forms are required if you want to collect some data from of the site visitor.</p>
+                  <p class="mb-5">For example: If a user want to purchase some items on internet, he/she must fill the form such as shipping address and credit/debit card details so that item can be sent to the given address.</p>
+
+                  <h5 class="mb-3">HTML Form Syntax</h5>
+                    <div class="html text-white">
+                      &lt;form action=&quot;server url&quot; method=&quot;get|post&quot;&gt;  <br>
+                      //input controls e.g. textfield, textarea, radiobutton, button  <br>
+                      &lt;/form&gt;  
+                    </div>
+
+                    <h5 id="Tables" class="mt-5"><b>HTML Form Tags</b></h5>
+                    <table class="table border border-1 table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col">Opening Tag</th>
+                          <th scope="col">Closing Tag</th>
+                          <th scope="col">Description</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>&lt;form&gt;</td>
+                          <td>&lt;/form&gt;</td>
+                          <td>It defines an HTML form to enter inputs by the used side.</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;input&gt;</td>
+                          <td>&lt;/input&gt;</td>
+                          <td>It defines an input control.</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;textarea&gt;</td>
+                          <td>&lt;/textarea&gt;</td>
+                          <td>It defines a multi-line input control.</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;label&gt;</td>
+                          <td>&lt;/label&gt;</td>
+                          <td>It defines a label for an input element.</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;fieldset&gt;</td>
+                          <td>&lt;/fieldset&gt;</td>
+                          <td>It groups the related element in a form.</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;legend&gt;</td>
+                          <td>&lt;/legend&gt;</td>
+                          <td>It defines a caption for a &lt;fieldset&gt; element.</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;select&gt;</td>
+                          <td>&lt;/select&gt;</td>
+                          <td>It defines a drop-down list.</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;optgroup&gt;</td>
+                          <td>&lt;/optgroup&gt;</td>
+                          <td>It defines a group of related options in a drop-down list.</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;option&gt;</td>
+                          <td>&lt;/option&gt;</td>
+                          <td>It defines an option in a drop-down list.</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;button&gt;</td>
+                          <td>&lt;/button&gt;</td>
+                          <td>It defines a clickable button.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                </div>
+               
+                <a class="btn btn-primary float-end mt-5" href="structure.html"> Structure of HTML Webpage &#187;</a>
+
+            </div> <!-- End of Column 8-->
+
+            <!-- <div class="col-md-2">
+              <ul>
+                <li><a href="#HTMLIntro">Introduction</a></li>
+                <li><a href="#HTMLBasics">HTML Basic</a></li>
+                <li><a href="#Tags">HTML Tags</a></li>
+                <li><a href="#SemanticTags">Semantic Tags</a></li>
+                <li><a href="#Tables">Tables</a></li>
+              </ul>
+            </div> -->
+        </div><!-- End of Row Content-->
+    </article><!-- End of Article content-->
+
+    <!-- Footer Section -->
+    <footer class="mt-5">
+      <div class="container d-flex justify-content-around ">
+          <div class="row g-0">
+              <div class="col-md-6 text-center mb-5">
+                      <div class="d-md-inline-block">
+                          <a  href="index.html">Home</a>
+                      </div>
+                      <div class="d-md-inline-block">
+                          <a  href="about.html">About Us</a>
+                      </div>
+                      <div class="d-md-inline-block">
+                          <a  href="coding.html">Resources</a>
+                      </div>
+                      <div class="d-md-inline-block">
+                          <a  href="blog.html">Blog</a>
+                      </div>
+                      <div class="d-md-inline-block">
+                          <a  href="contact.html">Contact Us</a>
+                      </div>
+              </div>
+              <div class="col-md-6 text-center">
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-twitter-x"></i></a>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="#"><i class="bi bi-geo-alt"></i></a>
+              </div>
+              <div class="col-md-12 p-5">
+                  <div class="container text-center d-flex justify-content-center">
+                      <a href="index.html"><img src="media/logo.png" alt="Company Logo" title="Company Logo"></a>  
+                      &copy; 2023 CODE INFO. All rights reserved.
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+    <!-- Bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

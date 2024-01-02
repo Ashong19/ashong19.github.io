@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Info</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+    <header>
+        <!-- Navigation Section -->
+        <nav class="navbar navbar-expand-lg p-5 nav-bg ">
+            <div class="container-fluid">
+                <!-- Company Name and Logo -->
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="media/logo.png" alt="Company Logo" title="Company Logo"> <span class="text-white">CODE INFO</span>
+                </a>
+                <button class="navbar-toggler text-white collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#NavbarHeader" aria-controls="NavbarHeader" aria-expanded="false" aria-label="Toggle Navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+  
+  
+                <div class="collapse navbar-collapse justify-content-center" id="NavbarHeader">
+                    <ul class="navbar-nav text-center navbar-expand-sm mx-auto justify-content-center">
+  
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" id="NavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="">Resources</a>
+                            <ul class="dropdown-menu text-center bg-transparent border border-0" aria-labelledby="NavbarDropdown">
+                                <li><a class="dropdown-item" href="coding.html">Coding</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item ms-4 ">
+                           <img class="search-img pt-2" src="media/search-icon.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> <!--End of navigation-->
+    </header><!--End of Header-->
+
+    <article class="container mb-5 mt-5 ">
+        <div class="row">
+            <div class="col-md-4 accordion accordion-flush" id="AccordionSample"> <!-- Main accordion -->
+                <div class="accordion-item" id="accordion">
+                    <h2 class="accordion-header " id="heading1"> <!--Accordion item 1-->
+                        <button class="accordion-button acd-btn text-white" type="button" data-bs-toggle="collapse" data-bs-target="#Collapse1" aria-expanded="true" aria-controls="Collapse1">HTML</button>
+                    </h2>
+                    <div id="Collapse1" class="accordion-collapse collapse" data-bs-parent="AccordionSample" aria-labelledby="heading1">
+                        <div class="accordion-body">
+                            <p>HTML is the foundation on which all websites and coding projects are built. Our easy-to-follow beginner’s guide will walk you through topics from structured content to visual formatting and best practices involving HTML.</p>
+                            <a class="btn btn-outline-darkinfo mb-4" href="html.html">Learn more</a>
+                        </div>
+                    </div>
+                    
+                    <h2 class="accordion-header" id="heading2"> <!--Accordion item 2-->
+                        <button class="accordion-button acd-btn text-white" type="button" data-bs-toggle="collapse" data-bs-target="#Collapse2" aria-expanded="false" aria-controls="Collapse2">CSS</button>
+                    </h2>
+                    <div id="Collapse2" class="accordion-collapse collapse show" data-bs-parent="AccordionSample" aria-labelledby="heading2">
+                        <div class="accordion-body">
+                            <p>CSS stands for Cascading Style Sheets. CSS gives website developers the ability to modify a page layout, adjust colors and fonts and add effects to images and other elements.</p>
+                            <a class="btn btn-outline-darkinfo mb-4" href="css.html">Learn more</a>
+                        </div>
+                    </div>
+    
+                    <h2 class="accordion-header" id="heading3"> <!--Accordion item 3-->
+                        <button class="accordion-button acd-btn text-white" type="button" data-bs-toggle="collapse" data-bs-target="#Collapse3" aria-expanded="false" aria-controls="Collapse3">Javascript</button>
+                    </h2>
+                    <div id="Collapse3" class="accordion-collapse collapse" data-bs-parent="AccordionSample" aria-labelledby="heading3">
+                        <div class="accordion-body">
+                            <p>JavaScript is a dynamic, interpreted computer programming language with object-oriented capabilities. It is lightweight and most commonly used as a part of webpages whose implementations allow client-side script to interact with the user and create dynamic pages</p>
+                            <a class="btn btn-outline-darkinfo mb-4" href="#">Learn more</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> <!-- End of Accordion Section -->
+
+            <div class="col-md-8">
+                <div class="ps-3">
+                    <h1 class="mb-3">CSS Overview</h1>
+                    <img class="topic-img mb-3" src="media/csswhat.jpg" alt="">
+                    <p>CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.</p>
+                </div>
+                <div class="p-3">
+                    <h4 class="mt-4 mb-3">What is CSS</h5>
+                    <p>CSS (Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood? This article explains what CSS is with a simple syntax example and also covers some key terms about the language.</p>
+                    <p>It is a tool that allows web developers to define layouts, adjust fonts and colors, add effects and thoroughly customize the appearance of HTML-constructed websites. Before CSS, web developers had to rely on HTML alone to determine visual aspects — and even then, the results weren’t great. But today, HTML usually only provides the underlying structure of a site, whereas CSS now gives developers control over their site’s design choices. </p>
+                    <p>Cascading Style Sheets (CSS) was first proposed in October 1994 by Håkon Wium Lie, a Norwegian web pioneer who was frustrated by the lack of styling options available in web development. Lie’s original concept was well-received for its simplicity and ability to “cascade” formatting decisions out over several pages.</p>
+                    <p>However, it would take another two years for Lie and his design partner, Gijsbert (Bert) Bos, to create a functional version of CSS. But even then, the technology wasn’t complete — another decade would pass before the language evolved into the iteration we use today. Since then, CSS has become a standard means of determining a website’s appearance and design elements. </p>
+                </div>
+                <div class="p-3">
+                    <h4 class="mt-4 mb-3">Introduction to CSS</h5>
+                    <p>Cascading Style Sheets, or CSS, is frequently used in tandem with HyperText Markup Language (HTML) to define page layouts and appearance. CSS defines nearly every aspect of formatting you could think of, from determining fonts to setting table sizes and default text size. </p>
+                    <p>That said, CSS’s main draw isn’t its ability to define basic formatting — after all, modern HTML can do that. Instead, developers use CSS because it can extrapolate a specific style choice across multiple pages. Once a style is defined in a Cascading Style Sheet, it can be applied to any page that references that CSS file. </p>
+                    <p>This capability saves developers the trouble of defining every detail of each page manually and facilitates a more even, cohesive design. It also allows for quick changes; if a web designer needs to increase a site’s default text size, for example, they could enact the change in a matter of moments by editing a style sheet. </p>
+                </div>
+                <div class="p-3">
+                    <h4 class="mt-4 mb-3">CSS Syntax</h5>
+                    <p>CSS syntax encompasses two primary components. The first is property, which identifies the website feature under consideration. The second is value, which describes how a browser’s CSS engine should depict the property on a webpage. There are well over 100 different property types in CSS and an infinite number of possible values.</p>
+                    <p>Each value-and-property pair constitutes a declaration. Here’s some basic CSS for beginners:</p>
+                    <p><i>background-color:blue;</i></p>
+                    <p>CSS groups instructions into declaration blocks that are enclosed by opening and closing braces. These, as you’ll see below, use semicolons to isolate each directive. </p>
+                    <img class="topic-img" src="media/css-syntax.png" alt="">
+                </div>
+
+                <div class="p-3">
+                    <h4 class="mt-4 mb-3">Getting Started wih CSS</h5>
+                    <p>In this topic, we will take a simple HTML document and apply CSS to it, learning some practical things about the language along the way.</p>
+
+                    <h4>Starting with some HTML</h4>
+
+                    <p>1. In your preferred text editor, create a new file called “index.html” (e.g., Visual Studio Code, Sublime Text, Atom).</p>
+                    <p>Our starting point is an HTML document. You can copy the code from below if you want to work on your own computer. Save the code below as index.html in a folder on your machine.</p>
+
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="vYPERON" data-user="Ashong-Garcia" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/Ashong-Garcia/pen/vYPERON">
+                        without CSS</a> by Ashong Garcia (<a href="https://codepen.io/Ashong-Garcia">@Ashong-Garcia</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                </div>
+
+                <div class="p-3">
+                    <h4>Adding CSS to our Document</h4>
+                    <p>The very first thing we need to do is to tell the HTML document that we have some CSS rules we want it to use. There are three different ways to apply CSS to an HTML document that you'll commonly come across, however, for now, we will look at the most usual and useful way of doing so — linking CSS from the head of your document.</p>
+                    <p>2. Create a file in the same folder as your HTML document and save it as styles.css. The .css extension shows that this is a CSS file.</p>
+                    <p>To link styles.css to index.html, add the following line somewhere inside the &lt;head&gt; of the HTML document:</p>
+
+                    <pre class="text-primary">&lt;link rel="stylesheet" href="styles.css" /&gt;</pre>
+
+                    <p>This &lt;link&gt; element tells the browser that we have a stylesheet, using the rel attribute, and the location of that stylesheet as the value of the href attribute. You can test that the CSS works by adding a rule to styles.css. Using your code editor, add the following to your CSS file:</p>
+                
+                    <div class="bg-light">
+                       
+                    </div>
+                    <p>3. Add This to your file style.css ( <i>We are using External CSS you can learn here the <a href="typescss.html"> Types of CSS</a></i> )</p>
+                    <p><b>body {
+                        background-color: lightgrey;<br>
+                        font-family: Arial, sans-serif;<br>
+                        color: red;
+                        }
+                        </b></p>
+                    <p>
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bGZNvaL" data-user="Ashong-Garcia" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/Ashong-Garcia/pen/bGZNvaL">
+                            With CSS</a> by Ashong Garcia (<a href="https://codepen.io/Ashong-Garcia">@Ashong-Garcia</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                          </p>
+                          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                    </p>
+                    <p>4. After saving the file, return to your “index.html” file. Include a link to your CSS file in the document’s head section:</p>
+                    <p>5. Save the file and restart your browser. The page’s background color has been changed to light grey, and the font family and text color have been updated.</p>
+                    <p>The body selector was used in the preceding code to target the entire webpage. The following CSS properties were used: background-color, font-family, and colour. The background-color property changes the webpage’s background color to a light grey colorr (lightgrey), the font-family property changes the font family of the text to Arial or any sans-serif font, and the color property changes the text color to a dark grey colour (red).</p>
+               
+                    <a class="btn btn-primary float-end mt-5" href="typescss.html">Types of CSS &#187;</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer Section -->
+    <footer class="mt-5">
+        <div class="container d-flex justify-content-around ">
+            <div class="row g-0">
+                <div class="col-md-6 text-center mb-5">
+                        <div class="d-md-inline-block">
+                            <a  href="index.html">Home</a>
+                        </div>
+                        <div class="d-md-inline-block">
+                            <a  href="about.html">About Us</a>
+                        </div>
+                        <div class="d-md-inline-block">
+                            <a  href="coding.html">Resources</a>
+                        </div>
+                        <div class="d-md-inline-block">
+                            <a  href="blog.html">Blog</a>
+                        </div>
+                        <div class="d-md-inline-block">
+                            <a  href="contact.html">Contact Us</a>
+                        </div>
+                </div>
+                <div class="col-md-6 text-center">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-geo-alt"></i></a>
+                </div>
+                <div class="col-md-12 p-5">
+                    <div class="container text-center d-flex justify-content-center">
+                        <a href="index.html"><img src="media/logo.png" alt="Company Logo" title="Company Logo"></a>  
+                        &copy; 2023 CODE INFO. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

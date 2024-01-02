@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Info</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+    <header>
+        <!-- Navigation Section -->
+        <nav class="navbar navbar-expand-lg p-5 nav-bg ">
+            <div class="container-fluid">
+                <!-- Company Name and Logo -->
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="media/logo.png" alt="Company Logo" title="Company Logo"> <span class="text-white">CODE INFO</span>
+                </a>
+                <button class="navbar-toggler text-white collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#NavbarHeader" aria-controls="NavbarHeader" aria-expanded="false" aria-label="Toggle Navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+  
+  
+                <div class="collapse navbar-collapse justify-content-center" id="NavbarHeader">
+                    <ul class="navbar-nav text-center navbar-expand-sm mx-auto justify-content-center">
+  
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" id="NavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="">Resources</a>
+                            <ul class="dropdown-menu text-center bg-transparent border border-0" aria-labelledby="NavbarDropdown">
+                                <li><a class="dropdown-item" href="coding.html">Coding</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="blog.html">Blog</a>
+                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item ms-4 ">
+                           <img class="search-img pt-2" src="media/search-icon.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> <!--End of navigation-->
+    </header><!--End of Header-->
+
+    <article class="container mb-5 mt-5"> <!-- Main Container Article -->
+        <div class="row"> <!-- Start of Row Content-->
+            <div class="col-md-4 accordion accordion-flush" id="AccordionSample"> <!-- Main accordion -->
+                <div class="accordion-item" id="accordion">
+                    <h2 class="accordion-header" id="heading1"> <!--Accordion item 1-->
+                        <button class="accordion-button acd-btn text-white" type="button" data-bs-toggle="collapse" data-bs-target="#Collapse1" aria-expanded="true" aria-controls="Collapse1">HTML</button>
+                    </h2>
+                    <div id="Collapse1" class="accordion-collapse collapse show" data-bs-parent="AccordionSample" aria-labelledby="heading1">
+                        <div class="accordion-body">
+                            <p>HTML is the foundation on which all websites and coding projects are built. Our easy-to-follow beginner’s guide will walk you through topics from structured content to visual formatting and best practices involving HTML.</p>
+                            <a class="btn btn-outline-darkinfo mb-4" href="coding.html">Learn more</a>
+                        </div>
+                    </div>
+                    
+                    <h2 class="accordion-header" id="heading2"> <!--Accordion item 2-->
+                        <button class="accordion-button acd-btn text-white" type="button" data-bs-toggle="collapse" data-bs-target="#Collapse2" aria-expanded="false" aria-controls="Collapse2">CSS</button>
+                    </h2>
+                    <div id="Collapse2" class="accordion-collapse collapse" data-bs-parent="AccordionSample" aria-labelledby="heading2">
+                        <div class="accordion-body">
+                            <p>CSS stands for Cascading Style Sheets. CSS gives website developers the ability to modify a page layout, adjust colors and fonts and add effects to images and other elements.</p>
+                            <a class="btn btn-outline-darkinfo mb-4" href="css.html">Learn more</a>
+                        </div>
+                    </div>
+    
+                    <h2 class="accordion-header" id="heading3"> <!--Accordion item 3-->
+                        <button class="accordion-button acd-btn text-white" type="button" data-bs-toggle="collapse" data-bs-target="#Collapse3" aria-expanded="false" aria-controls="Collapse3">Javascript</button>
+                    </h2>
+                    <div id="Collapse3" class="accordion-collapse collapse" data-bs-parent="AccordionSample" aria-labelledby="heading3">
+                        <div class="accordion-body">
+                            <p>JavaScript is a dynamic, interpreted computer programming language with object-oriented capabilities. It is lightweight and most commonly used as a part of webpages whose implementations allow client-side script to interact with the user and create dynamic pages.</p>
+                            <a class="btn btn-outline-darkinfo mb-4" href="#">Learn more</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> <!-- End of Accordion Section -->
+
+            <div class="col-md-8"> <!--Start of Column 8-->
+                <div class="ps-3">
+                    <h3>Structure of an HTML Program and its Layout</h3>
+                    <p>To write an HTML ‘program’ (i.e. design a web page), you just need to learn a set of tags. Once done, and you are ready to go and publish your site. But as each program has a well-defined structure, your HTML program will also follow this rule. So, let’s learn the basic structure of an HTML program.</p>
+                    <h3> Defining the Structure</h3>
+                    <p>The following figure specifies the structure of an HTML program. Your complete HTML program  can consist of multiple tags but there are some tags that need to be there to make your program qualify as an HTML program.</p>
+                    <img class="topic-img" src="media/structure.png" alt="Structure HTML">
+                    <ol>
+                        <li><p>Here, the first statement is &lt;!DOCTYPE html&gt; is used to tell the browser the type of document it is dealing it. Since, ours is an HTML document, so, we will have to write &lt;!DOCTYPE html&gt; to tell that is an HTML document.</p></li>
+                        <li><p>The second line of the program uses the tag &lt;html&gt;. This tag is the root element and wraps all other tags.</p></li>
+                        <li><p>The <head> tag contains the header information such as title of the page, metadata, styles, or scripts. Each of these information is specified in their corresponding tags. And all these tags should be contained within the &lt;head&gt; tag. For example, we have include &lt;title&gt; tag within the &lt;head&gt; tag.</p></li>
+                    </ol>
+
+                    <p>Confused? No, you shouldn’t be. We are here to answer all your queries! Let us simplify! Title is the title of the page. Have you ever seen the title that is displayed when you open a web page in your web browser? That title is defined using the &lt;title&gt; tag.</p>
+                    
+                    <p><i><b> Task 1: Just go and browse any web page and check its title. </b></i></p>
+
+                    <p>Got it? Good. Let us proceed further. Other tags that can be used within the &lt;head&gt; tag are:</p>
+
+                    <ol>
+                        <li><p> &lt;script&gt; and &lt;noscript&gt;: You will use these with javaScript. </p></li>
+                        <li><p> &lt;style&gt;: For specifying style information. We will take it up when we will learn CSS.</p></li>
+                        <li><p> &lt;meta&gt;: used to specify the metadata. What is metadata? Well, metadata is data about data. So, this tag will contain information about the current HTML document. This includes keywords, author, page description and setting the viewport.  We will take the meta tag in detail in the later chapters.</p></li>
+                        <li><p>The &lt;body&gt; tag contains all those tags which are used to specify the content, formatting or layout. For example, if you wish to include an image in your webpage, you should place using its corresponding tag in the &lt;body&gt; section.</p></li>
+                    </ol>
+
+                    <h3 class="mb-3">Concept of Closing Tags</h3>
+
+                    <p>Did you notice the &lt;/head&gt;, &lt;/body&gt; and the &lt;/html&gt; tags? These are the closing tags. HTML tags can be closing tags, also called paired tags or singular tags. Paired tags always close with their closing tag. For example, &lt;html&gt;…&lt;/html&gt;. While singular tags do not need a closing tag.</p>
+                    
+                    <h3 class="mb-3">Coding the first HTML Program</h3>
+                    <p> Now, that you have understood the basic structure of an HTML program, shall we try and code the first HTML program? Let us start. What you just have to do is to follow these steps: in this example we use <b>>Notepad Text Editor</b></p>
+                    <ul>
+                        <li><p>Open Notepad in your PC (or if you have any other editor as learn here the about Text Editor) and type the following code:</p>
+                            <img class="mb-3 topic-img" src="media/samplehtml.png" alt="">
+                        </li>
+                        <li><p>Once done, save your file with any name of your choice but give the extension as .html. This converts your file in to a web page. As simple as that!!</p>
+                            <img class="mb-3 topic-img" src="media/save.png" alt="">
+                        </li>
+                        <li><p>The last step is to go the location where you saved your file. Did you observe its icon? It will be the icon of your default browser. Just Double-click it to open and it will open in your default browser.</p></li>
+                    </ul>
+
+                    <p><b><i>Note: HTML is case-insensitive. It means that you can enter the tags in both uppercase as well lowercase. It doesn’t matter!  </i></b></p>
+
+                    <p><b>Task 2: Write your first HTML code and execute it yourself.</b></p>
+
+                    <p>Can’t wait or learning through your mobile device? Don’t worry. We have a solution for that too. Just type your code in the following online code editor and see how it comes out here itself.</p>
+                
+
+                    <!-- Codepen Embed -->
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWowGWy" data-user="Ashong-Garcia" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/Ashong-Garcia/pen/QWowGWy">
+                        Untitled</a> by Ashong Garcia (<a href="https://codepen.io/Ashong-Garcia">@Ashong-Garcia</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                </div>
+
+                <div class="text-center mt-5 ">
+                    <p>If you want a deeper more information about Web Structures enroll now at <a href="https://kodego.ph/" target="_blank">Kodego Philippines</a></p>
+                    <p>You want More? Hurry Up learn from one of our Bootcamp partner!
+                    <p><a href="https://kodego.ph/"><img class="topic-img" src="media/kodegobanner.png" alt="Partner Banner Kodego"></a>
+                </div>
+
+                <div class="mt-5">
+                    <a class="btn btn-primary float-start" href="html.html">&#171; Learn About HTML</a>
+                </div>
+            </div> <!-- End of Column 8-->
+        </div><!-- End of Row Content-->
+    </article><!-- End of Article content-->
+
+    <!-- Footer Section -->
+    <footer class="mt-5">
+        <div class="container d-flex justify-content-around ">
+            <div class="row g-0">
+                <div class="col-md-6 text-center mb-5">
+                        <div class="d-md-inline-block">
+                            <a  href="index.html">Home</a>
+                        </div>
+                        <div class="d-md-inline-block">
+                            <a  href="about.html">About Us</a>
+                        </div>
+                        <div class="d-md-inline-block">
+                            <a  href="coding.html">Resources</a>
+                        </div>
+                        <div class="d-md-inline-block">
+                            <a  href="blog.html">Blog</a>
+                        </div>
+                        <div class="d-md-inline-block">
+                            <a  href="contact.html">Contact Us</a>
+                        </div>
+                </div>
+                <div class="col-md-6 text-center">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-geo-alt"></i></a>
+                </div>
+                <div class="col-md-12 p-5">
+                    <div class="container text-center d-flex justify-content-center">
+                        <a href="index.html"><img src="media/logo.png" alt="Company Logo" title="Company Logo"></a>  
+                        &copy; 2023 CODE INFO. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
