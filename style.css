@@ -77,7 +77,7 @@ body{
 }
 
 .partner-logo{
-  width: 100px;
+  width: 150px;
 }
 
 .banner-img{
@@ -86,11 +86,9 @@ body{
 }
 
 .testi-img{
-  background: linear-gradient(white, white) padding-box,
-  linear-gradient(to right, darkblue, darkorchid) border-box;
   border-radius: 50em;
-  border: 10px solid transparent;
-  width: 200px;
+  border: 10px solid #fff;
+  width: 150px;
 }
 
 /* --------------- Card Style --------------- */
@@ -108,7 +106,7 @@ body{
   height: auto;
   border-radius: 10px;
   margin: auto;
-  width: 70%;
+  width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
