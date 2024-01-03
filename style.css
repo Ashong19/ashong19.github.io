@@ -42,11 +42,11 @@ body{
   text-align: justify;
 }
 
-.hero-text{
+/* .hero-text{
   font-size: 50px;
   border-radius: 20px;
   padding: 20px 100px;
-}
+} */
 
 /* --------------- Images Style and Sizes --------------- */
 
@@ -101,6 +101,7 @@ body{
     border-radius: 10px;
     margin: auto;
     width: 100%;
+    position: relative;
     text-align: center;
 }
 .testi-card{
