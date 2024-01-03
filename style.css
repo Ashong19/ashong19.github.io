@@ -376,23 +376,3 @@ footer img{
   color: rgb(236, 227, 227,0.8);
 }
 
-
-/* HTML Styles for documentary */
-
-.html{
-  background-color: rgb(38, 34, 34);
-  max-height: 600px;
-  padding: 20px;
-}
-
-.html-tag{
-  color: orangered;
-}
-
-.html-attr{
-  color: brown;
-}
-
-.html-value{
-  color: green;
-}
