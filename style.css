@@ -42,12 +42,6 @@ body{
   text-align: justify;
 }
 
-/* .hero-text{
-  font-size: 50px;
-  border-radius: 20px;
-  padding: 20px 100px;
-} */
-
 /* --------------- Images Style and Sizes --------------- */
 
 .logo{
@@ -101,8 +95,7 @@ body{
     border-radius: 10px;
     margin: auto;
     width: 100%;
-    position: relative;
-    text-align: center;
+
 }
 .testi-card{
   background: linear-gradient(to right, rgb(1, 1, 136,0.8), rgb(152, 51, 202,0.8));
@@ -117,9 +110,8 @@ body{
 .contact-card{
   background-color: #003B73;
   color: #fff;
-  width: 100%;
-  border-radius: 5px;
-  padding: 50px;
+  width: auto;
+  border-radius: 10px;
 }
 
 
@@ -377,3 +369,23 @@ footer img{
   color: rgb(236, 227, 227,0.8);
 }
 
+
+/* HTML Styles for documentary */
+
+.html{
+  background-color: rgb(38, 34, 34);
+  max-height: 600px;
+  padding: 20px;
+}
+
+.html-tag{
+  color: orangered;
+}
+
+.html-attr{
+  color: brown;
+}
+
+.html-value{
+  color: green;
+}
