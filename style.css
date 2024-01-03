@@ -116,8 +116,9 @@ body{
 .contact-card{
   background-color: #003B73;
   color: #fff;
-  width: auto;
-  border-radius: 10px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 50px;
 }
 
 
