@@ -253,6 +253,13 @@ article li{
   outline: 0 !important;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
 }
+/* Accordion */
+
+div.scroll {
+  height: 1500px;
+  overflow: auto;
+  padding: 20px;
+}
 
 .acd-btn{
   background-color: #003B73 !important;
