@@ -359,7 +359,7 @@ footer a{
 }
 footer a:hover{
     color: rgba(6, 167, 216, 0.8);
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 footer{
     background-color:#003B73;
