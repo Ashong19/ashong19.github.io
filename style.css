@@ -235,7 +235,7 @@ article li{
 /* Accordion */
 
 div.scroll {
-  height: 1500px;
+  height: 1000px;
   overflow: auto;
   padding: 20px;
 }
