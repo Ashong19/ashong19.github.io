@@ -8,10 +8,9 @@ body{
 
 /* --------------- Container Shadow --------------- */
 .container {
-  padding: 20px;
-  box-shadow: 1px 15px 20px -5px #003B73;
-  margin-top: 30px;
+  box-shadow: 1px 5px 10px 5px rgb(0, 59, 115,0.5);
   overflow: hidden;
+  padding: 20px;
 }
 
 /* --------------- Hero Style --------------- */
@@ -127,9 +126,12 @@ nav li a{
 
 
 /* --------------- Navigation Style CSS --------------- */
-
+/* 
 .nav-bg{
   background-color: #003B73 !important ;
+} */
+.nav-item{
+  padding-left: 30px;
 }
 
 nav li a:hover{
@@ -349,13 +351,14 @@ footer a{
 
 }
 footer a:hover{
-    color: rgb(236, 227, 227,0.8);
+    color: rgba(6, 167, 216, 0.8);
+    text-decoration: underline;
 }
 footer{
     background-color:#003B73;
     color: #fff;
-    padding-top: 20px;
 }
+
 footer img{
     width: 20px;
 }
@@ -365,7 +368,7 @@ footer img{
 }
 
 .contact a:hover{
-  color: rgb(236, 227, 227,0.8);
+  color: rgb(236, 227, 227);
 }
 
 
