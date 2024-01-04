@@ -136,30 +136,9 @@ nav li a{
 
 nav li a:hover{
     width: 100%;
-    color: rgb(236, 227, 227,0.6) !important;
+    color: rgba(6, 167, 216, 0.8) !important;
 }
-.dropdown-item:hover{
-    background-color: #003B73;
-    color: #fff !important;
-}
-.dropdown-item{
-    background-color: none;
-    text-align: left;
-    color: #fff !important;
-    margin: 0;
-}
-.dropdown-item:hover{
-  background-color: none;
-  text-align: left;
-  color: rgb(236, 227, 227,0.6) !important;
-  margin: 0;
-}
-.dropdown-menu{
-  background-color: #003B73 !important;
-}
-.dropdown-menu > li {
-  display: inline-block;
-}
+
 
 /* --------------- Nagication Style toggle CSS --------------- */
 
@@ -375,7 +354,7 @@ footer img{
 }
 
 .contact a:hover{
-  color: rgb(236, 227, 227);
+  color: rgba(6, 167, 216, 0.8);
 }
 
 
