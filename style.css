@@ -40,6 +40,10 @@ body{
   text-align: justify;
 }
 
+.code-left{
+  text-align: left;
+}
+
 /* --------------- Images Style and Sizes --------------- */
 
 .logo{
