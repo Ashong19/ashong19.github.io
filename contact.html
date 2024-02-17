@@ -39,8 +39,18 @@
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="coding.html">Resources</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Resources
+                            </a>
+                            <ul class="dropdown-menu text-center ">
+                                <li>                      
+                                    <a class="nav-link" href="coding.html">Topics</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="download.html">Download Resources</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="blog.html">Blog</a>
@@ -49,60 +59,102 @@
                             <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
                     </ul>
+
+                    <ul class="navbar-nav text-center">
+                        <script>
+                            document.write(sessionStorage.getItem("username") !== null ? 
+                           `<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Welcome, ` + sessionStorage.getItem("username") + `
+                            </a>
+                            <ul class="dropdown-menu text-center ">
+                                <li><a class="nav-link" href="/">Profile</a></li>
+                                <li><a class="nav-link" onclick="logout()">Logout</a></li>
+                            </ul>`
+        
+                            : 
+                            `<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Hello Guest
+                            </a>
+                            <ul class="dropdown-menu text-center ">
+                                <li><a class="nav-link" href="/user/register.html">Register</a>                                </li>
+                                <li><a class="nav-link" href="/user/login.html">Login</a></li>
+                            </ul>
+                        </li>`);
+        
+                                    function logout(){
+                                        sessionStorage.removeItem("username");
+                                        window.location.href = "/";
+                                    }
+                        </script>
+                    </ul>
                 </div>
             </div>
         </nav> <!--End of navigation-->
     </header><!--End of Header-->
 
-        <!-- <div class="row p-5 g-0">
-            <div class="text-center p-5 mb-5">
-                <h1 class="text-white">Contact Us</h1>
-            </div>
-        </div> -->
 
-    <article class="contact p-5">
-        <h1 class="mb-5 text-center">We want to hear your Feedback</h1>
-        <div class="container p-3">
+    <article><!-- Main Container Article -->
+        <div class=" container position-relative">
+            <h1 class="mb-5 text-center">We want to hear your Feedback</h1>
             <div class="row mb-5">
                 <div class="col-md-6 p-5">
                     <img class="topic-img" src="media/feedback.png" alt="Feedback Image">
-                    <p>We would love to hear any feedback from our users so that we can further and continue enhancing and improving our services. Thank you!</p>
+                    <p>We would love to hear any feedback from our users so that we can further continue to enhance and improve our services. Thank you!</p>
                 </div>
                 <div class="col-md-6">
-                    <form>
+                    <form id="feedbackForm">
                         <!-- Name input -->
+                        
+                        <div id="sucess" style="opacity: 0;" class="alert alert-success alert-dismissible fade show" role="alert">
+                            Your Feedback is important to us so we can improve our Services! <strong>Thank you!</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        
                         <div class="form-outline mb-4">
                             <label class="form-label" for="FullName">Full Name</label>
-                            <input type="text" id="FullName" class="form-control" placeholder="Full Name">
+                            <input type="text" id="fullname" class="form-control" placeholder="Full Name" required>
                         </div>
                         <!-- Email input -->
                         <div class="form-outline mb-4">
                             <label class="form-label" for="Email">Email address</label>
-                            <input type="email" id="Email" class="form-control" placeholder="name@example.com">
+                            <input type="email" id="email" class="form-control" placeholder="name@example.com" required>
                         </div>
-                      
+                    
                         <!-- Message input -->
                         <div class="form-outline mb-4">
-                          <textarea class="form-control" style="resize: none;" id="form4Example3" rows="10"></textarea>
-                          <label class="form-label" for="Message">Message</label>
+                        <textarea class="form-control" style="resize: none;" id="message" rows="10" required></textarea>
+                        <label class="form-label" for="Message">Message</label>
                         </div>
-                      
+                    
                         <!-- Checkbox -->
                         <div class="form-check d-flex justify-content-center mb-4 ">
-                          <input class="form-check-input me-2" type="checkbox" checked>
-                          <label class="form-check-label" for="sendcopy">
+                        <input class="form-check-input me-2" type="checkbox" checked>
+                        <label class="form-check-label" for="sendcopy">
                             Send me a copy of this message
-                          </label>
+                        </label>
                         </div>
                         <!-- Submit button -->
-                        <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4">Send</button>
-                      </form>
+
+                        <script>
+                        document.write(sessionStorage.getItem("username") !== null ?  
+                            `<button data-mdb-ripple-init type="submit" id="feedbackBtn" class="btn btn-primary btn-block mb-4">Send</button>
+                            `: 
+                            `<span class="d-inline-block mb-5" tabindex="5" data-toggle="tooltip" title="You need to Login">
+                                <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled id="liveAlertBtn">Send</button> 
+                            </span><br>
+                            <div class="text-center">Not yet a Member? <a href="">Register Here!</a></div>`);
+                            
+                        </script>
+                        <!-- <button data-mdb-ripple-init type="submit" id="feedbackBtn" class="btn btn-primary btn-block mb-4">Send</button> -->
+                    </form>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="contact-card">
+                <div class="register-card ">
                     <div class="col-md-12 d-md-inline-flex  justify-content-between p-5">
-                        <div class="col-md-6 justify-content-md-center">
+                        <div class="col-md-6 justify-content-md-center mb-5">
                             <h5 class="mb-3">Contact Details</h5>
                             <div class="mb-3">
                             <i class="bi bi-person-circle"><a class="ms-3" href="">Ashley Gevera</a></i>
@@ -175,7 +227,7 @@
         </div>
     </footer>
     <!-- Bootstrap javascript -->
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
 </body>
 </html>

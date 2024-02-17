@@ -39,8 +39,18 @@
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="coding.html">Resources</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Resources
+                            </a>
+                            <ul class="dropdown-menu text-center ">
+                                <li>                      
+                                    <a class="nav-link" href="coding.html">Topics</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="download.html">Download Resources</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="blog.html">Blog</a>
@@ -49,36 +59,65 @@
                             <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
                     </ul>
+
+                    <ul class="navbar-nav text-center">
+                        <script>
+                            document.write(sessionStorage.getItem("username") !== null ? 
+                           `<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Welcome, ` + sessionStorage.getItem("username") + `
+                            </a>
+                            <ul class="dropdown-menu text-center ">
+                                <li><a class="nav-link" href="/">Profile</a></li>
+                                <li><a class="nav-link" onclick="logout()">Logout</a></li>
+                            </ul>`
+
+                            : 
+                            `<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Hello Guest
+                            </a>
+                            <ul class="dropdown-menu text-center ">
+                                <li><a class="nav-link" href="/user/register.html">Register</a>                                </li>
+                                <li><a class="nav-link" href="/user/login.html">Login</a></li>
+                            </ul>
+                        </li>`);
+
+                                    function logout(){
+                                        sessionStorage.removeItem("username");
+                                        window.location.href = "/";
+                                    }
+                        </script>
+                    </ul>
                 </div>
             </div>
         </nav> <!--End of navigation-->
     </header><!--End of Header-->
 
-    <article class=" mb-5 mt-5 ">
-        <h1 class="mb-5 text-center">December Blog 2024</h1>
-        <div class="container p-3">
+    <article><!-- Main Container Article -->
+        <div class="container position-relative">
+            <h1 class="mb-5 text-center">December Blog 2024</h1>
             <div class="row p-3">
                 <div class="col-md-8"> <!-- Blog Area banner-->
                     <div class="row">
-                        <div class="card">
+                        <div class="mb-5">
                             <img style="width: 100%; height: 200px;" src="media/banner-blog1.png" alt="Steps Banner Image">
                                 <div class="col-sm-12">
                                     <div class="card-body">
                                         <h4 class="card-title">How to Create a Website From Scratch (Step-By-Step Beginner’s Guide)</h4>
                                         <h6><i>Publish December 31, 2023</i></h6>
-                                        <a href="article1.html" class="btn btn-outline-darkinfo">Read more.</a>
+                                        <a href="article1.html" class="btn btn-outline-primary">Read more <i class="bi bi-box-arrow-up-right"></i></a>
                                         
                                     </div>
                                 </div>
                         </div>
-                        <hr>
-                        <div class="card mt-3">
+                        <div class="mb-5">
                             <img class="banner-img" src="media/banner-blog2.png" alt="Create Banner Image">
                                 <div class="col-sm-12">
                                     <div class="card-body">
                                         <h4 class="card-title">How to Learn to Create and Develop Modern Websites</h4>
                                         <h6><i>Publish December 25, 2023</i></h6>
-                                        <a href="article2.html" class="btn btn-outline-darkinfo">Read more.</a>
+                                        <a href="article2.html" class="btn btn-outline-primary">Read more <i class="bi bi-box-arrow-up-right"></i></a>
                                     </div>
                                 </div>
                         </div>
@@ -90,13 +129,13 @@
                             <button type="button" class="list-group-item list-group-item-action rounded-0 active btn-darkinfo text-start" disabled aria-current="false">
                             2023 Blogs
                             </button>
-                            <button type="button" class="list-group-item list-group-item-action "><a href="decemberblog2023.html"> December 2023 </a>
+                            <button type="button" class="list-group-item list-group-item-action "><a class="text-dark" href="decemberblog2023.html"> December 2023 </a>
                                 <span class="badge bg-primary rounded-pill">2</span>
                             </button>
                             <button type="button" class="list-group-item list-group-item-action rounded-0 active btn-darkinfo text-start" disabled aria-current="false">
                                 Upcoming 2024 Blogs
                             </button>
-                            <button type="button" class="list-group-item list-group-item-action"><a href="januaryblog2024.html"> January 2024 </a>
+                            <button type="button" class="list-group-item list-group-item-action"><a class="text-dark" href="januaryblog2024.html"> January 2024 </a>
                                 <span class="badge bg-primary rounded-pill">1</span>
                             </button>
                             <button type="button" class="list-group-item list-group-item-action rounded-0 active btn-darkinfo text-start" disabled aria-current="false">

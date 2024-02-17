@@ -39,8 +39,18 @@
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="coding.html">Resources</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Resources
+                            </a>
+                            <ul class="dropdown-menu text-center ">
+                                <li>                      
+                                    <a class="nav-link" href="coding.html">Topics</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="download.html">Download Resources</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="blog.html">Blog</a>
@@ -49,13 +59,43 @@
                             <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
                     </ul>
+
+                    <ul class="navbar-nav text-center">
+                        <script>
+                            document.write(sessionStorage.getItem("username") !== null ? 
+                           `<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Welcome, ` + sessionStorage.getItem("username") + `
+                            </a>
+                            <ul class="dropdown-menu text-center ">
+                                <li><a class="nav-link" href="/">Profile</a></li>
+                                <li><a class="nav-link" onclick="logout()">Logout</a></li>
+                            </ul>`
+        
+                            : 
+                            `<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Hello Guest
+                            </a>
+                            <ul class="dropdown-menu text-center ">
+                                <li><a class="nav-link" href="/user/register.html">Register</a>                                </li>
+                                <li><a class="nav-link" href="/user/login.html">Login</a></li>
+                            </ul>
+                        </li>`);
+        
+                                    function logout(){
+                                        sessionStorage.removeItem("username");
+                                        window.location.href = "/";
+                                    }
+                        </script>
+                    </ul>
                 </div>
             </div>
         </nav> <!--End of navigation-->
     </header><!--End of Header-->
         
-    <div class="container mt-3">
-        <article>
+    <article>
+        <div class="contact container position-relative">
             <div class="row mb-5 ">
                 <h1 class="font-weight-bold h3 mb-5 text-center fs-1">About Code Info</h1>
                 <hr>
@@ -106,7 +146,7 @@
                         <div class="row p-5">
                             <div class="col-md-4 ">
                                 <div class="col-md-6 slide-right">
-                                    <img class="developer-img" src="media/thedeveloper.jpg" alt="The Developer Image">
+                                    <img class="developer-img" src="media/thedev.gif" alt="The Developer Image">
                                 </div>
                             </div>
                             <div class="col-md-8 mt-3 ">
@@ -119,8 +159,9 @@
                         </div>
                     </div>
             </div>
-        </article>
-    </div>
+        </div>
+    </article>
+
     <!-- Footer Section -->
     <footer>
         <div class="d-flex justify-content-around p-4">

@@ -39,8 +39,18 @@
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="coding.html">Resources</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Resources
+                            </a>
+                            <ul class="dropdown-menu text-center ">
+                                <li>                      
+                                    <a class="nav-link" href="coding.html">Topics</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="download.html">Download Resources</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="blog.html">Blog</a>
@@ -49,61 +59,93 @@
                             <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
                     </ul>
+
+                    <ul class="navbar-nav text-center">
+                        <script>
+                            document.write(sessionStorage.getItem("username") !== null ? 
+                           `<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Welcome, ` + sessionStorage.getItem("username") + `
+                            </a>
+                            <ul class="dropdown-menu text-center ">
+                                <li><a class="nav-link" href="/">Profile</a></li>
+                                <li><a class="nav-link" onclick="logout()">Logout</a></li>
+                            </ul>`
+        
+                            : 
+                            `<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Hello Guest
+                            </a>
+                            <ul class="dropdown-menu text-center ">
+                                <li><a class="nav-link" href="/user/register.html">Register</a>                                </li>
+                                <li><a class="nav-link" href="/user/login.html">Login</a></li>
+                            </ul>
+                        </li>`);
+        
+                                    function logout(){
+                                        sessionStorage.removeItem("username");
+                                        window.location.href = "/";
+                                    }
+                        </script>
+                    </ul>
                 </div>
             </div>
         </nav> <!--End of navigation-->
     </header><!--End of Header-->
 
-    <article class="container mb-5 mt-5 "> <!-- Blog Article Container-->
-        <div class="row p-3 ">  
-            <div class="col-md-8"> <!-- Start Content -->
-                <div class="row">
-                    <img src="media/10steps.jpg" alt="Article Image"> <!-- Article Image -->
-                    <h1>How to Learn to Create and Develop Modern Websites</h1> <!-- Article Title -->
-                    <p class="fs-6 mb-5"><i>Publish by Juan Dela Cruz | December 25, 2023</i></p> <!-- Author -->
+    <article><!-- Main Container Article -->
+        <div class="container position-relative">
+            <div class="row p-3 ">  
+                <div class="col-md-8"> <!-- Start Content -->
+                    <div class="row">
+                        <img src="media/10steps.jpg" alt="Article Image"> <!-- Article Image -->
+                        <h1>How to Learn to Create and Develop Modern Websites</h1> <!-- Article Title -->
+                        <p class="fs-6 mb-5"><i>Publish by Juan Dela Cruz | December 25, 2023</i></p> <!-- Author -->
 
-                    <p>Now that we have covered how to build a website from scratch, a crucial question remains: Where (and how) can you get started?</p>
-                    <p>Creating a website from scratch is relatively straightforward in theory, but it helps to have an established repertoire of applicable skills. Fortunately, there are several paths to learning the skills needed for modern website creation and development. These include bootcamp programs, traditional college degrees in an applicable field and independent learning options. Each of these options offers a unique take on learning website creation skills, and your choice will likely depend on your desired learning pace and curriculum structure.</p>
-                    <p>Read on for a quick overview of each learning option.</p>
+                        <p>Now that we have covered how to build a website from scratch, a crucial question remains: Where (and how) can you get started?</p>
+                        <p>Creating a website from scratch is relatively straightforward in theory, but it helps to have an established repertoire of applicable skills. Fortunately, there are several paths to learning the skills needed for modern website creation and development. These include bootcamp programs, traditional college degrees in an applicable field and independent learning options. Each of these options offers a unique take on learning website creation skills, and your choice will likely depend on your desired learning pace and curriculum structure.</p>
+                        <p>Read on for a quick overview of each learning option.</p>
 
-                    <h4><b>Bootcamps</b></h4>
-                    <p>Bootcamp programs are perhaps the strongest path for learning website creation skills — especially those rooted in web development and coding. These programs tailor their curricula to a variety of experience levels, offering a comprehensive overview of web development and coding fundamentals including a series of modules featuring hands-on, project-based learning opportunities.</p>
-                    <p>Bootcamps are fast-paced and intensive, but they are also thorough and relatively flexible. New website developers are usually able to learn on their own schedule, gaining future-proof skills quickly and efficiently.</p>
-                    <p><i>Join Bootcamp like <a href="https://kodego.ph/">Kodego Philippines</a></i></p>
-                    <p>What’s more, bootcamp graduates are being held in increasingly high regard within web development hiring, with nearly one in three hiring managers bringing on bootcamp graduates for developer roles in 2020, according to HackerRank’s 2020 Developer Skills Report. Around 72 percent of these managers felt that their hires were “ equally or better equipped for the job than other hires.”</p>
-                
-                    <h4>Traditional degrees</h4>
-                    <p>Alternatively, aspiring website developers can learn applicable skills through a traditional college degree program. These options, while typically longer than most bootcamp programs, allow students to hone their website creation abilities while learning about the broader industries that encapsulate such skills. They also offer the chance to learn in a more gradual, communal setting that may take place on- or off-campus. Many leading institutions also offer individual courses in web development and coding online.</p>
-                    <p>Relevant major programs for website development may include computer science, engineering or digital arts.</p>    
+                        <h4><b>Bootcamps</b></h4>
+                        <p>Bootcamp programs are perhaps the strongest path for learning website creation skills — especially those rooted in web development and coding. These programs tailor their curricula to a variety of experience levels, offering a comprehensive overview of web development and coding fundamentals including a series of modules featuring hands-on, project-based learning opportunities.</p>
+                        <p>Bootcamps are fast-paced and intensive, but they are also thorough and relatively flexible. New website developers are usually able to learn on their own schedule, gaining future-proof skills quickly and efficiently.</p>
+                        <p><i>Join Bootcamp like <a href="https://kodego.ph/">Kodego Philippines</a></i></p>
+                        <p>What’s more, bootcamp graduates are being held in increasingly high regard within web development hiring, with nearly one in three hiring managers bringing on bootcamp graduates for developer roles in 2020, according to HackerRank’s 2020 Developer Skills Report. Around 72 percent of these managers felt that their hires were “ equally or better equipped for the job than other hires.”</p>
                     
-                    <h4>Independent learning options</h4>
-                    <p>For those interested in learning autonomously, there is also a variety of independent learning options teaching website creation skills. These options can take many forms, including free online courses, comprehensive instructional videos and educational apps. While less structured than the previous two pathways, independent learning provides the unique chance to learn on your schedule, at your own pace and through your desired medium — all while honing key soft skills like time management, personal accountability and project compartmentalization.</p>
-                
-                    <p class="text-center mt-5">What are you waiting for? Joins us now!</p>
-                    <a href="https://kodego.ph/" target="_blank"><img class="topic-img" src="media/kodegobanner.png" alt="Kodego Banner"></a>
-                </div>
-            </div> <!-- End Content -->
-
-            <!-- Sidebar Article -->
-            <div class="col-md-4">
-                <div class="accordion-item">
-                    <div class="list-group">
-                        <button type="button" class="list-group-item list-group-item-action active btn-darkinfo text-start" disabled aria-current="false">
-                          2023 Blogs
-                        </button>
-                        <button type="button" class="list-group-item list-group-item-action"><a href="decemberblog2023.html"> December 2023 </a>
-                            <span class="badge bg-primary rounded-pill">2</span>
-                        </button>
-                        <button type="button" class="list-group-item list-group-item-action active btn-darkinfo text-start" disabled aria-current="false">
-                            2024 Blogs
-                          </button>
-                          <button type="button" class="list-group-item list-group-item-action"><a href="januaryblog2024.html"> January 2024 </a>
-                            <span class="badge bg-primary rounded-pill">2</span>
-                      </div>
+                        <h4>Traditional degrees</h4>
+                        <p>Alternatively, aspiring website developers can learn applicable skills through a traditional college degree program. These options, while typically longer than most bootcamp programs, allow students to hone their website creation abilities while learning about the broader industries that encapsulate such skills. They also offer the chance to learn in a more gradual, communal setting that may take place on- or off-campus. Many leading institutions also offer individual courses in web development and coding online.</p>
+                        <p>Relevant major programs for website development may include computer science, engineering or digital arts.</p>    
+                        
+                        <h4>Independent learning options</h4>
+                        <p>For those interested in learning autonomously, there is also a variety of independent learning options teaching website creation skills. These options can take many forms, including free online courses, comprehensive instructional videos and educational apps. While less structured than the previous two pathways, independent learning provides the unique chance to learn on your schedule, at your own pace and through your desired medium — all while honing key soft skills like time management, personal accountability and project compartmentalization.</p>
                     
+                        <p class="text-center mt-5">What are you waiting for? Joins us now!</p>
+                        <a href="https://kodego.ph/" target="_blank"><img class="topic-img" src="media/kodegobanner.png" alt="Kodego Banner"></a>
+                    </div>
+                </div> <!-- End Content -->
+
+                <!-- Sidebar Article -->
+                <div class="col-md-4">
+                    <div class="accordion-item">
+                        <div class="list-group">
+                            <button type="button" class="list-group-item list-group-item-action active btn-darkinfo text-start" disabled aria-current="false">
+                            2023 Blogs
+                            </button>
+                            <button type="button" class="list-group-item list-group-item-action"><a class="text-dark" href="decemberblog2023.html"> December 2023 </a>
+                                <span class="badge bg-primary rounded-pill">2</span>
+                            </button>
+                            <button type="button" class="list-group-item list-group-item-action active btn-darkinfo text-start" disabled aria-current="false">
+                                2024 Blogs
+                            </button>
+                            <button type="button" class="list-group-item list-group-item-action"><a class="text-dark" href="januaryblog2024.html"> January 2024 </a>
+                                <span class="badge bg-primary rounded-pill">2</span>
+                        </div>
+                        
+                    </div>
                 </div>
+                <!-- End Sidebar Article -->
             </div>
-             <!-- End Sidebar Article -->
         </div>
     </article> <!-- End of Blog Article-->
 
