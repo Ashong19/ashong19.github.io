@@ -8,9 +8,10 @@ body{
 
 /* --------------- Container Shadow --------------- */
 .container {
-  box-shadow: 1px 5px 10px 5px rgb(0, 59, 115,0.5);
+  box-shadow: 1px 0px 10px 0px rgb(0, 59, 115,0.5);
+  padding: 50px;
   overflow: hidden;
-  padding: 20px;
+  /* height: 100vh; */
 }
 
 /* --------------- Hero Style --------------- */
@@ -64,8 +65,18 @@ body{
   width: 100%;
 }
 
+.download-img{
+  height: 30vh;
+  width: 100%;
+}
+.bg-register-image {
+  background: url('media/register.png');
+  background-position: center;
+  background-size: cover;
+}
+
 .slider-img{
-  width: 250px;
+  width: 350px;
   display: flex;
   flex-wrap: wrap;
   align-self: center;
@@ -99,6 +110,27 @@ body{
     width: 100%;
 
 }
+.login-card{
+  background: linear-gradient(to bottom, rgb(1, 1, 136,0.8), rgba(13, 39, 87));
+  padding: 40px;
+  color: #fff;
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+  
+}
+.register-card{
+  background: linear-gradient(to bottom, rgb(1, 1, 136,0.8), rgba(13, 39, 87));
+  padding: 70px;
+  color: #fff;
+  border-radius: 20px;
+  width: 100%;
+  margin: auto;
+  
+}
+
+
+
 .testi-card{
   background: linear-gradient(to right, rgb(1, 1, 136,0.8), rgb(152, 51, 202,0.8));
   height: auto;
@@ -141,6 +173,15 @@ nav li a{
 nav li a:hover{
     width: 100%;
     color: rgba(6, 167, 216, 0.8) !important;
+}
+
+.dropdown-menu{
+  background: linear-gradient(to bottom, rgb(1, 1, 136,0.8), rgba(13, 39, 87,0.8));
+  margin: 0;
+  padding: 0;
+}
+.dropdown-menu:hover{
+ cursor: pointer;
 }
 
 
@@ -219,7 +260,7 @@ nav li a:hover{
 
 /* --------------- Article Section CSS --------------- */
 
-article a{
+p a{
   text-decoration: none;
   color: #003B73;
 }
@@ -345,7 +386,7 @@ footer a:hover{
     /* text-decoration: underline; */
 }
 footer{
-    background-color:#003B73;
+  background: rgb(11, 11, 64);
     color: #fff;
 }
 
@@ -353,11 +394,12 @@ footer img{
     width: 20px;
 }
 
-.contact a{
+a{
   color: #fff;
+  text-decoration: none;
 }
 
-.contact a:hover{
+a:hover{
   color: rgba(6, 167, 216, 0.8);
 }
 
@@ -381,3 +423,90 @@ footer img{
 .html-value{
   color: green;
 }
+
+/* Alerts */
+
+#success-user, #err-username{
+  opacity: 0;
+}
+/* #success-user{
+  color: green;
+}
+#err-username{
+  color: red;
+} */
+
+
+/* List */
+#portfolio{
+  padding: 20px;
+}
+.my-projects{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.projects{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.projects img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer{
+  width: 100%;
+  height: 0;
+  background: linear-gradient(to bottom, rgb(1, 1, 136,0.8), rgba(13, 39, 87));
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 20px;
+  transition: height 0.5s;
+  color: #fff;
+}
+
+.layer h3{
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.layer a{
+  margin-top: 20px;
+  color: #003B73;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.layer a:hover{
+  background-color: #003B73;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.projects:hover img{
+  transform: scale(1.1);
+}
+
+.projects:hover .layer{
+  height: 100%;
+}
+
+
