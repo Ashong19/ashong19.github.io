@@ -114,8 +114,6 @@ body{
   background: linear-gradient(to bottom, rgb(1, 1, 136,0.8), rgba(13, 39, 87));
   color: #fff;
   border-radius: 20px;
-  width: 100%;
-  padding: 100px;
 }
 
 .login-bg{
@@ -127,9 +125,9 @@ body{
 
 .register-card{
   background: linear-gradient(to bottom, rgb(1, 1, 136,0.8), rgba(13, 39, 87));
-  padding: 0px 100px;
   color: #fff;
   margin: auto;
+  width: 500px;
 }
 
 
