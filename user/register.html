@@ -13,77 +13,60 @@
 </head>
 </head>
 <body>
-    <header class="hero">
-        <!-- Navigation Section -->
-        <nav class="navbar navbar-expand-lg p-5 bg-transparent">
-            <div class="container-fluid">
-                <!-- Company Name and Logo -->
-                <a class="navbar-brand" href="../index.html">
-                    <img class="logo" src="../media/logo.png" alt="Company Logo" title="Company Logo"> <span class="text-white">CODE INFO</span>
-                </a>
-            </div>
-        </nav> <!--End of navigation-->
-        
-    </header><!--End of Header-->
+    
 
     <article>
-        <div class="">
-
-            <div class="">
-                <div class="card-body p-0">
-                    <!-- Nested Row within Card Body -->
-                    <div class="row">
-                        <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
-                        <div class="col-lg-7">
-                            <div class="p-5">
-                                <div class="text-center">
-                                    <h1 class="text-gray-900 mb-4 fs-1">Create an Account!</h1>
-                                </div>
-                                <form class="user" id="formRegister">
-                                    <div id="success" style="opacity: 0;" class="alert alert-success alert-dismissible fade show" role="alert">
-                                        You have Successfully Registered! <strong>Thank you!</strong>
-                                       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                   </div>
-                                        <p class="alert alert-success" id="success-user">Username Available<i class="bi bi-check-lg"></i></p>
-                                        <p class="alert alert-danger" id="err-username">Username Already Taken<i class="bi bi-x"></i></p>
-                                    <div class="form-group mb-4">
-                                        <input type="text" class="form-control form-control-user" id="username"placeholder="Username" required>
-                                        <div style="color: red;" class="fst-italic" id="error-user"></div>
-                                        <small class="fst-italic fs-6">(Username must be 6 to 10 characters)</small>
-
-                                    </div>
-                                    <div class="form-group row mb-4">
-                                        <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <input type="text" class="form-control form-control-user" id="firstname" placeholder="First Name" required>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control form-control-user" id="lastname"placeholder="Last Name" required>
-                                        </div>
-                                    </div>
-                                    <div class="form-group mb-4">
-                                        <input type="email" class="form-control form-control-user" id="email"placeholder="Email Address" required>
-                                    </div>
-                                    <div class="form-group mb-5">
-                                        <!-- <span style="color: green; opacity: 0" class="fst-italic" id="success-pass"><i class="bi bi-check-lg"></i></span> -->
-                                        <input type="password" class="form-control form-control-user" id="password" placeholder="Password">
-                                        <small class="fst-italic fs-6">(Password must be 7 to 20 characters)</small>
-                                            <p style="color: red;" class="fst-italic" id="error-pass"></p>
-                                    </div>
-                                    
-                                    <div class="text-center">
-                                        <a class="small float-start" href="login.html">Already have an account? Login!</a>
-                                        <button data-mdb-ripple-init type="submit" id="feedbackBtn" class="btn btn-success float-end  btn-block mb-4">Submit</button>
-                                    </div>
-                                </form>
+        <div class="register-card">
+            <div class="card-body p-5">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h1 class="text-gray-900 mb-4 fs-1">Create an Account!</h1>
                             </div>
+                            <form class="user" id="formRegister">
+                                <div id="success" style="opacity: 0;" class="alert alert-success alert-dismissible fade show" role="alert">
+                                    You have Successfully Registered! <strong>Thank you!</strong>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                                    <p class="alert alert-success" id="success-user">Username Available<i class="bi bi-check-lg"></i></p>
+                                    <p class="alert alert-danger" id="err-username">Username Already Taken<i class="bi bi-x"></i></p>
+                                <div class="form-group mb-4">
+                                    <input type="text" class="form-control form-control-user" id="username"placeholder="Username" required>
+                                    <div style="color: red;" class="fst-italic" id="error-user"></div>
+                                    <small class="fst-italic fs-6">(Username must be 6 to 10 characters)</small>
+
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="firstname" placeholder="First Name" required>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control form-control-user" id="lastname"placeholder="Last Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <input type="email" class="form-control form-control-user" id="email"placeholder="Email Address" required>
+                                </div>
+                                <div class="form-group mb-5">
+                                    <!-- <span style="color: green; opacity: 0" class="fst-italic" id="success-pass"><i class="bi bi-check-lg"></i></span> -->
+                                    <input type="password" class="form-control form-control-user" id="password" placeholder="Password">
+                                    <small class="fst-italic fs-6">(Password must be 7 to 20 characters)</small>
+                                        <p style="color: red;" class="fst-italic" id="error-pass"></p>
+                                </div>
+                                
+                                <div class="text-center">
+                                    <a class="small float-start" href="login.html">Already have an account? Login!</a>
+                                    <button data-mdb-ripple-init type="submit" id="feedbackBtn" class="btn btn-success float-end  btn-block mb-4">Submit</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-    
         </div>
-
-        
             <!-- <div class="row mt-5 ">
                 <div class="col-md-6 p-5">
                     <p class="text-center fs-1">Join Us Now!</p>
