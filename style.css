@@ -116,6 +116,12 @@ body{
   border-radius: 20px;
 }
 
+.adminlogin-bg{
+  background: url('media/admin-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .login-bg{
   background: url('media/login-bg.jpg');
   background-repeat: no-repeat;
@@ -143,7 +149,7 @@ body{
 }
 
 .contact-card{
-  background-color: #003B73;
+  background: rgb(11, 11, 64);
   color: #fff;
   width: 100%;
   border-radius: 10px;
