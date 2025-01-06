@@ -25,16 +25,22 @@
             });
 
             if (userlogin.length === 0) {
-                error.innerHTML = "Please Input Field";
+                error.innerHTML = "Credentials Incorrect";
                 error.style.opacity = 1;
                 if(username !== userdata.username && password !== userdata.password){
-                    alert("Username and password not match");
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Wrong Credentials",
+                      });
                 }
                 
             } else {
-                success.innerHTML = "User Login Successfully";
-                success.style.opacity = 1;
-                error.style.opacity = 0;
+                Swal.fire({
+                    title: "Successfully Login",
+                    icon: "success",
+                    draggable: true
+                  });
                 window.location.href = "../index.html";
 
                 sessionStorage.setItem("username", username)
