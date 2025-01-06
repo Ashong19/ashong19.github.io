@@ -515,7 +515,20 @@ a:hover{
 .projects:hover .layer{
   height: 100%;
 }
+/* login form / register */
 
 #loginForm{
-  padding: 20px 70px;
+  padding: 30px 100px;
 }
+
+.reg:hover{
+  color: rgba(6, 167, 216, 0.8) !important;
+}
+
+.card-registration  {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+  }
+ 
